@@ -1,1 +1,1 @@
-# YoRPG_Yip-Yip-Array-
+# YoRPG_HipHip-Array
