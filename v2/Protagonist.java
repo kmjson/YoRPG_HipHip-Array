@@ -1,6 +1,6 @@
 // Team: Hip Hip, Array! - Jason Kim, Derek Song, Muhammad Kashf Mashrafi
 // APCS1 pd1
-// HW28 - Ye Olde Role Playing Game, Improved
+// HW30 - Ye Olde Role Playing Game, Improved
 // 2017 - 11 - 12
 
 public class Protagonist extends Character {
