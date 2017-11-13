@@ -1,1 +1,1 @@
-Version 1 of the RPG
+Version 2 of the RPG
