@@ -1,3 +1,8 @@
+// Team: Hip Hip, Array! - Jason Kim, Derek Song, Muhammad Kashf Mashrafi
+// APCS1 pd1
+// HW30 - Ye Olde Role Playing Game, Expanded
+// 2017 - 11 - 13
+
 public class Warrior extends Protagonist {
     public Warrior () {
 	HP = 125;
