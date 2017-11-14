@@ -3,7 +3,7 @@
 // HW30 - Ye Olde Role Playing Game, Expanded
 // 2017 - 11 - 13
 
-public class Mage extends Protagonist {
+public class Mage extends Protagonist{
     public Mage (String str) {
         super(str);
 	HP = 80;
