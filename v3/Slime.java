@@ -7,7 +7,7 @@ import java.lang.Math;
 
 public class Slime extends Monster {
 
-    public void Slime() {
+    public Slime() {
 	HP = 150; //HP is equal to 150
 	strength = (int) ((Math.random() * 45) + 5); //strength is equal to a value between 5 and 45
 	defense = 50; //defense is equal to 50
