@@ -6,10 +6,10 @@
 public class Character {
 
     //Instance Variables
-    public int HP;
-    public int strength;
-    public int defense;
-    public double atkRate;
+    protected int HP;
+    protected int strength;
+    protected int defense;
+    protected double atkRate;
     
     //Methods
     public boolean isAlive() {

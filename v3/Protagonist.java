@@ -6,7 +6,7 @@
 public class Protagonist extends Character {
 
     //Instance Variables
-    private String name;
+    protected String name;
 
     //Default Constructor
     public Protagonist (String str) { //constructor that takes in an attribute (String)

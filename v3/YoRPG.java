@@ -67,18 +67,10 @@ public class YoRPG
 	}
 	catch ( IOException e ) { }
 
-	s = "Intrepid protagonist, what doth thy call thyself? (State your name): ";
-	System.out.print( s );
-
-	try {
-	    name = in.readLine();
-	}
-	catch ( IOException e ) { }
-
 	String t;
-	t += "\nChoose your Class: \n";
+	t = "\nChoose your Class: \n";
 	t += "\t1: Warrior\n";
-	t += "\t2: Healer\n";
+	t += "\t2: Mage\n";
 	t += "\t3: Turtle\n";
 	t += "Selection: ";
 	System.out.print( t );
@@ -88,15 +80,24 @@ public class YoRPG
 	}
 	catch ( IOException e ) { }
 
+	s = "Intrepid protagonist, what doth thy call thyself? (State your name): ";
+	System.out.print( s );
+
+	try {
+	    name = in.readLine();
+	}
+	catch ( IOException e ) { }
+
+	pat = new Protagonist(name);
+
 	//instantiate the player's character
 	if (playerClass == 1) {
-            pat = new Warrior(name);
+            Protagonist pat = new Warrior(name);
         } else if (playerClass == 2) {
-            pat = new Healer(name);
+            Protagonist pat = new Mage(name);
         } else if (playerClass == 3) {
-            pat = new Turtle(name);
+            Protagonist pat = new Turtle(name);
 	}
-	System.out.println(pat.about());
 	    
     }//end newGame()
 

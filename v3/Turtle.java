@@ -4,14 +4,15 @@
 // 2017 - 11 - 13
 
 public class Turtle extends Protagonist {
-    public Turtle () {
+    public Turtle (String str) {
+	super(str);
 	HP = 150;
 	strength = 100;
 	defense = 60;
 	atkRate = 0.4;
     }
 
-    public static about() {
+    public static String about() {
 	return "This is a Turtle! But he is not your average turtle that you keep at home! He is a turtle that can withstand a ton of damage and still be able to hurt you back! Don't get on his bad side or else he'll make sure he makes your attacks worthless.";
     }
 }
