@@ -1,4 +1,6 @@
 # YoRPG_HipHip-Array
+By Jason Kim, Derek Song, Md Mashrafi
+
 V4 Updates:
 Abstract!
   1) specialize(), normalize(), about() are now abstract methods in abstract class Protagonist.
