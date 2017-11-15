@@ -3,7 +3,7 @@
 // HW30 - Ye Olde Role Playing Game, Improved
 // 2017 - 11 - 12
 
-public class Protagonist extends Character {
+public class Protagonist extends Character{
 
     //Instance Variables
     protected String name;
