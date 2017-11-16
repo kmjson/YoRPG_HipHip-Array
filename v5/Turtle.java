@@ -8,7 +8,7 @@ public class Turtle extends Protagonist {
 	super(str);
 	HP = 150;
 	strength = 100;
-	defense = 40;
+	defense = 45;
 	atkRate = 0.4;
     }
 
