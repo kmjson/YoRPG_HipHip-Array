@@ -26,5 +26,6 @@ public abstract class Protagonist extends Character {
     public abstract String about();
     public abstract void specialize();
     public abstract void normalize();
+    public abstract void heal();
 }
 	

@@ -5,7 +5,7 @@
 
 import java.lang.Math;
 
-public class Monster extends Character {
+public abstract class Monster extends Character {
 
     //Default Constructor
     public Monster() {
@@ -14,4 +14,6 @@ public class Monster extends Character {
 	defense = 20; //defense is equal to 20
 	atkRate = 1; //attack rating is equal to 1
     }
+
+    public abstract String about();
 }

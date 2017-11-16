@@ -22,6 +22,11 @@ public class Warrior extends Protagonist {
 	defense = 25;
     }
 
+    public void heal(){
+	HP = 125;
+	atkRate = 0;
+    }
+
     public String about() {
 	return "This is a Warrior! He has trained in depths of the wilderness and has now chosen to aid in the fight against the monsters! He is well known for his stronger attacks but is also known for having less stamina than his peers.";
     }

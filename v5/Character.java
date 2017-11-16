@@ -15,6 +15,10 @@ public class Character {
     public boolean isAlive() {
 	return (HP > 0); //returns whether or not the HP is above 0
     }
+
+    public int getHP() {
+	return HP;
+    }
     
     public int getDefense() {
 	return defense; //returns the defense stat
@@ -25,7 +29,7 @@ public class Character {
     }
     
     public int attack(Character opponent) {
-	int damage = (int) ((strength * atkRate) - opponent.getDefense()); //damage is equal to strength * attack rating of the attacker  minus the opponent's defense
+	int damage = (int) ((strength * atkRate) - opponent.getDefense() + (Math.random()*4 - 8)); //damage is equal to strength * attack rating of the attacker  minus the opponent's defense, with a bit of a randomness
 	if (damage < 0) { //if damage is negative, just make it 0
 	    damage = 0;
 	}

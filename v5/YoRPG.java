@@ -23,6 +23,7 @@ public class YoRPG
     private boolean gameOver;
     private int difficulty;
     private int playerClass;
+    private int healcount = 0;
 
     private InputStreamReader isr;
     private BufferedReader in;
@@ -79,6 +80,7 @@ public class YoRPG
 	t += "\t" + b.about() + "\n";
 	t += "\t3: Turtle\n";
 	t += "\t" + c.about() + "\n";
+	t += "\tEach Class carries two potions with them to heal themselves!\n";
 	t += "Selection: ";
 	System.out.print( t );
 
@@ -122,26 +124,52 @@ public class YoRPG
 	    System.out.println( "\nNothing to see here. Move along!" );
 	else {
 	    System.out.println( "\nLo, yonder monster approacheth!" );
-
-	    smaug = new Monster();
-
+	    
+	    int x = (int) (Math.random() * 3.0);
+	    if (x == 0){
+		smaug = new Goblin();
+	    }
+	    else if (x == 1){
+		smaug = new Minotaur();
+	    }
+	    else {
+		smaug = new Slime();
+	    }
+	    
+	    System.out.println(smaug.about() +" \n");
+	    
 	    while( smaug.isAlive() && pat.isAlive() ) {
-
+		
 		// Give user the option of using a special attack:
 		// If you land a hit, you incur greater damage,
 		// ...but if you get hit, you take more damage.
 		try {
+		    System.out.println( "==================================================");
+		    System.out.println( "Your HP: " + pat.getHP());
+		    System.out.println( "Monster's HP: " + smaug.getHP() + "\n");
 		    System.out.println( "\nDo you feel lucky?" );
-		    System.out.println( "\t1: Nay.\n\t2: Aye!" );
+		    System.out.println( "\t1: Nay.\n\t2: Aye!\n\t3: Heal, POTION ME!" );
 		    i = Integer.parseInt( in.readLine() );
 		}
 		catch ( IOException e ) { }
 
-		if ( i == 2 )
+		if ( i == 2 ){
 		    pat.specialize();
-		else
+		}
+		else if (i == 3){
+		    if (healcount < 2){
+			pat.heal();	
+			healcount += 1;
+			System.out.println("\nYou have healed!");
+		    }
+		    else {
+			System.out.println("You have ran out of potions! Thou can't heal thyself!");
+		    }
+		}
+		else {
 		    pat.normalize();
-
+		}
+		
 		d1 = pat.attack( smaug );
 		d2 = smaug.attack( pat );
 
@@ -171,7 +199,6 @@ public class YoRPG
 		return false;
 	    }
 	}//end else
-
 	return true;
     }//end playTurn()
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

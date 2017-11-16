@@ -8,18 +8,23 @@ public class Turtle extends Protagonist {
 	super(str);
 	HP = 150;
 	strength = 100;
-	defense = 40;
+	defense = 35;
 	atkRate = 0.4;
     }
 
     public void specialize() {
-	defense = 80;
+	defense = 40;
 	atkRate = 0.3;
     }
 
     public void normalize() {
-	defense = 60;
+	defense = 35;
 	atkRate = 0.4;
+    }
+
+    public void heal() {
+	HP = 150;
+	atkRate = 0;
     }
     
     public String about() {
