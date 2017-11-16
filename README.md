@@ -13,7 +13,7 @@ HOW TO PLAY:
         - Mage - Increase atkRate, decrease def
         - Warrior - Increase atkRate, decrease def
       - Nay - keeps stats as is.
-      - Heal, POTION ME! - You don't feel confident at all and request healing.
+      - No, POTION ME! - You don't feel confident at all and request healing.
     - The battle system is very simple. The damage calculator depends on your character's strength and atkRate stats and on the monster's defense stat. There is a bit of randomness involved!
     - Potions will heal you to max health. 
     - You only carry 2 potions with you, so you can heal only twice!
