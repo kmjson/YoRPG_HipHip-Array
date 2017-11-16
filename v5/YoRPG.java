@@ -148,7 +148,7 @@ public class YoRPG
 		    System.out.println( "Your HP: " + pat.getHP());
 		    System.out.println( "Monster's HP: " + smaug.getHP() + "\n");
 		    System.out.println( "\nDo you feel lucky?" );
-		    System.out.println( "\t1: Nay.\n\t2: Aye!\n\t3: Heal, POTION ME!" );
+		    System.out.println( "\t1: Nay.\n\t2: Aye!\n\t3: No, POTION ME!" );
 		    i = Integer.parseInt( in.readLine() );
 		}
 		catch ( IOException e ) { }
