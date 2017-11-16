@@ -8,7 +8,7 @@ public class Warrior extends Protagonist {
 	super(str);
 	HP = 125;
 	strength = 120;
-	defense = 25;
+	defense = 30;
 	atkRate = 0.5;
     }
 
